@@ -1365,6 +1365,16 @@ document.querySelectorAll('.overlay').forEach(ov=>{
 
 // INIT
 initData();
+  <!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  // ⬇️ GANTI dengan milik kamu dari Tahap 5
+  const SUPA_URL = 'https://zfemhspucuxabwdumgkk.supabase.co';
+  const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpmZW1oc3B1Y3V4YWJ3ZHVtZ2trIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU2ODE3MjEsImV4cCI6MjA5MTI1NzcyMX0.4OxLW-LSRbp3IQpdlL1VvauGw5Phb1RuQ0trvlaI34g';
+
+  window.$supa = supabase.createClient(SUPA_URL, SUPA_KEY);
+  console.log('✅ Supabase terhubung!');
+</script>
 </script>
 </body>
 </html>
